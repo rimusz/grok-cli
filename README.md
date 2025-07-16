@@ -1,6 +1,8 @@
 # grok-cli-go
 
-A command-line interface (CLI) for interacting with xAI's Grok API. This tool enables multi-turn conversations with Grok models (e.g., Grok 4), supports agentic workflows via tool calling (ReAct-style looping for tasks like calculations and file operations), and includes live search integration.
+A Grok (CLI) for interacting with xAI's Grok API, created with the help of Grok 4 itself.
+
+This tool enables multi-turn conversations with Grok models (e.g., Grok 4), supports agentic workflows via tool calling (ReAct-style looping for tasks like calculations and file operations), and includes live search integration.
 
 Built in Go for performance and cross-platform compatibility, it's designed for developers wanting a lightweight, customizable CLI to leverage Grok's capabilities without relying on web or mobile apps.
 
