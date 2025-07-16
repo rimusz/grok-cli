@@ -1,8 +1,7 @@
 module github.com/rimusz/grok-cli-go
 
-go 1.24.5
+go 1.22
 
-require (
-	github.com/Knetic/govaluate v3.0.0+incompatible // indirect
-	github.com/sashabaranov/go-openai v1.40.5 // indirect
-)
+require github.com/Knetic/govaluate v3.0.0+incompatible
+require github.com/sashabaranov/go-openai v1.24.0
+
