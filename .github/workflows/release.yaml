@@ -38,6 +38,7 @@ jobs:
           git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$new_tag"
 
   goreleaser:
+    needs: tag
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
