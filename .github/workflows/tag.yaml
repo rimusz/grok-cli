@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   tag:
     runs-on: ubuntu-latest
@@ -14,6 +17,8 @@ jobs:
           fetch-depth: 0  # Fetch all history and tags
 
       - name: Create or Increment Tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Get the latest tag
           latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
@@ -29,4 +34,4 @@ jobs:
           
           # Create and push the new tag
           git tag "$new_tag"
-          git push origin "$new_tag"
+          git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$new_tag"
