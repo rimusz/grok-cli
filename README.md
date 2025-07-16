@@ -20,7 +20,7 @@ Note: File operations are limited to the current working directory for security.
 
 1. **Prerequisites**:
    - Go 1.24 or later.
-   - A Grok API key from [xAI API](https://x.ai/api).
+   - A Grok API key from [xAI API](https://console.x.ai/team/default/api-keys.).
 
 2. **Clone the Repo**:
    ```
