@@ -45,6 +45,12 @@ For multi-arch binaries, use the Goreleaser workflow by tagging a release (e.g.,
 
 ## Usage
 
+On macOS, if you encounter a Gatekeeper security warning when running grok-cli, remove the quarantine attribute:
+
+   ```
+   sudo xattr -d com.apple.quarantine ~/bin/grok-cli
+   ```
+
 Run the CLI and interact via prompts:
 
 ```
