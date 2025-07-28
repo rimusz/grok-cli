@@ -1,4 +1,4 @@
-# grok-cli-go
+# grok-cli
 
 A Grok (CLI) for interacting with xAI's Grok API, created with the help of Grok 4 itself.
 
